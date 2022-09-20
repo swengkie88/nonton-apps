@@ -1,0 +1,56 @@
+.unscroll {
+  position: relative;
+  text-align: center;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.unscroll .container {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  flex-direction: column;
+}
+.unscroll p {
+  visibility: visible;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+.scrolled .container {
+  padding-top: 0;
+  padding-bottom: 0;
+  flex-direction: row;
+  align-items: center;
+}
+.scrolled h1 {
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+.scrolled p {
+  visibility: hidden;
+}
+
+@media (max-width: 576px) {
+  .scrolled {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .scrolled .container {
+    flex-direction: column;
+  }
+  .scrolled h1 {
+    margin-bottom: 0.5rem;
+  }
+  .scrolled p {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
